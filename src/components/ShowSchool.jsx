@@ -15,7 +15,7 @@ export const ShowSchools = () => {
     const fetchSchools = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:3000/api/schools');
+            const response = await fetch('https://schoolmanagement-server.onrender.com/api/schools');
             const data = await response.json();
 
             if (response.ok) {

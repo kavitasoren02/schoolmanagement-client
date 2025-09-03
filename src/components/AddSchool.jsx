@@ -36,7 +36,7 @@ const AddSchool = ({ onSuccess }) => {
             formData.append('email_id', data.email_id);
             formData.append('image', data.image[0]);
 
-            const response = await fetch('http://localhost:3000/api/schools', {
+            const response = await fetch('https://schoolmanagement-server.onrender.com/api/schools', {
                 method: 'POST',
                 body: formData,
             });

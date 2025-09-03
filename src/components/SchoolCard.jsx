@@ -4,7 +4,7 @@ export const SchoolCard = ({ school }) => (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
         <div className="relative">
             <img
-                src={`http://localhost:3000/${school.image}`}
+                src={`https://schoolmanagement-server.onrender.com/${school.image}`}
                 alt={school.name}
                 className="w-full h-48 object-cover"
                 onError={(e) => {
